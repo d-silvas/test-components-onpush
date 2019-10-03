@@ -129,7 +129,7 @@ describe('AppComponent - Using a host component', () => {
     expect(functionP.textContent).toBe('12');
   });
 
-  it('DOM does not change when changing the input property', () => {
+  it('DOM changes when changing the input property through the host component', () => {
     hostComponent.text = 'a';
     hostFixture.detectChanges();
     reassignElements();
